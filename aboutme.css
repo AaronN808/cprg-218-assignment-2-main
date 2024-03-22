@@ -1,11 +1,12 @@
 /* Image styles */
 img {
     max-width: 50%;
-    height: 50%;
+    height: auto;
     border-radius: 20%;
     display: block; 
     margin: 0 auto;
 }
+
 
 /* Accordion styles */
 .accordion {
