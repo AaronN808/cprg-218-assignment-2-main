@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron Nicor Portfolio</title>
+    <title>Play</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/dyt7fpi.css">
     <link rel="stylesheet" href="buttonstyles.css">
-    <link rel="stylesheet" href="herobanner.css">
     <link rel="stylesheet" href="developericon.css">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+    <link rel="icon" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="api.css">
+    <script src="api.js"></script>
 </head>
 <body>
-    <header class="hero-banner">
+    <header>
         <div class="containerbutton">
             <h1></h1>
             <nav>
@@ -20,48 +21,37 @@
                     <li class="listref"><a href="index.html">work.</a></li>
                     <li class="listref"><a href="play.html">play.</a></li>
                     <li class="listref"><a href="me.html">me.</a></li>
-                    <li class="listref"><a href="api.html">api.</a></li>
                 </ul>
             </nav>
             <img src="assets/developerwhite.svg" alt="White Developer Icon - Head with Syntax Code Inside" class="svg-icon">
         </div>
     </header>
-
-    <section id="about" class="section">
+    <section id="play" class="section">
         <div class="container">
-            <h2>Hi! I'm Aaron, a UX Design Student attending Southern Institute of Alberta.</h2>
+            <h2>Studio Ghibli API</h2>
         </div>
     </section>
-
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <div class="project-info">
-                    <h3>EIA Portugal</h3>
-                    <p>Work in Progress.</p>
-                </div>
-                <div class="project-button">
-                    <a href="#" class="view-project-btn">View Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-info">
-                    <h3>Capstone 2025</h3>
-                    <p>Work in Progress.</p>
-                </div>
-                <div class="project-button">
-                    <a href="#" class="view-project-btn">View Project</a>
-                </div>
-            </div>
+            <h2>You can now search for a Ghibli Movie. Searching for characters or location will also bring up the particular movie they originate from.</h2>
         </div>
-    </section>
-
-    <section id="contact" class="section">
         <div class="container">
+            <ul id="option-2-results" class="card-container"></ul>
         </div>
     </section>
-
+    <section class="option-2-enhanced">
+        <div class="option-container">
+            <!-- Search box to find content on cards -->
+            <div class="search-container">
+                <input id="searchbar" class="search-bar" type="text" name="search" placeholder="Search for a Studio Ghibli Movie...">
+            </div>
+        </div>
+        <div class="container">
+            <!-- Display cards -->
+            <ul id="option-2-enhanced-results" class="card-container"></ul>
+        </div>
+    </section>
+    <div id="root"></div>
     <footer>
         <div class="container">
             <p>&copy; 2024 Aaron Nicor. All rights reserved.</p>
